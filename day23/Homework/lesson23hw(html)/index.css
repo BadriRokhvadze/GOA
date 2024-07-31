@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+}
+
+h1, p {
+    color: aqua;
+}
+
+p.o {
+    align-self: center;
+    margin: 300px;
+    color: blue;
+}
