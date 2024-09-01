@@ -1,30 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website Design</title>
     <style>
-        #o {
-            padding: 5%;
-            box-shadow: 10px;
-            background-color: blue;
-            box-shadow: 50px 30px 50px;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
         }
 
-        #oo {
-            margin-right: 10;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: #333;
+            margin-right: 20px;
+        }
+
+        .header .cta-button {
+            background-color: #6c63ff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .hero-text .cta-button {
+            background-color: #6c63ff;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+
+        .hero-image {
+            max-width: 600px;
+        }
+
+        .hero-image img {
+            width: 100%;
         }
     </style>
 </head>
+
 <body>
-    <div id="o">
-        <div id="oo"><i>YOUR <b>WEBSITE</b></i></div>
-        <div id="ooo"><h1><b>Website <br> Design</b></h1>
-        <br><button>Button name</button></div>
-        <div id="oooo"></div>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h2>Your Website</h2>
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Work</a>
+                <a href="#">Info</a>
+                <a href="#" class="cta-button">Get Started</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Website Design</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget libero feugiat, faucibus libero id, scelerisque quam.</p>
+                <a href="#" class="cta-button">Button name</a>
+            </div>
+            <div class="hero-image">
+                <img src="image.png" alt="Website design illustration">
+            </div>
+        </section>
     </div>
 </body>
-</html>
 
-<!--vergavakete-->
+</html>
